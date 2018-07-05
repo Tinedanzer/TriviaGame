@@ -1,13 +1,21 @@
 body{
-    background-color:crimson
+    background-color:rgb(66, 4, 16)
 }
 h1{text-align: center;
-
+    color: blue;
 }
 p{text-align: center;
-    color: rgb(75, 1, 75);
-
+    color: rgb(92, 91, 92);
 }
 .Aroo{
-/* padding-left: 20% */
+
+}
+#Done{
+    position: absolute;
+    left: 44%;
+}
+#Timer{
+    color:white;
+    position: absolute;
+    left:40%;
 }
