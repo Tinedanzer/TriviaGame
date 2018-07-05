@@ -1,5 +1,6 @@
 body{
-    background-color:rgb(66, 4, 16)
+    background-color:rgb(66, 4, 16);
+    font-size: 20px;
 }
 h1{text-align: center;
     color: blue;
@@ -8,11 +9,8 @@ p{text-align: center;
     color: rgb(92, 91, 92);
 }
 .Aroo{
-
-}
-#Done{
-    position: absolute;
-    left: 44%;
+    position:absolute;
+    left:44%;
 }
 #Timer{
     color:white;
