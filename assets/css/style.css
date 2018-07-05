@@ -1,6 +1,9 @@
+html{
+    border:35px solid black;
+}
 body{
     background-color:rgb(66, 4, 16);
-    font-size: 20px;
+    font-size: 18px;
 }
 h1{text-align: center;
     color: blue;
