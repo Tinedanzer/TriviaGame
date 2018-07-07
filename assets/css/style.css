@@ -9,15 +9,21 @@ h1{text-align: center;
     color: blue;
 }
 p{text-align: center;
-    color: rgb(92, 91, 92);
+    color: rgba(243, 239, 239, 0.267)
 }
 .Aroo{
     position:absolute;
     left:44%;
+    color:rgb(92, 91, 92);
 }
-#Timer{
+.Aroo2{
+    position:relative;
+    left:44%;
+    color:rgb(92, 91, 92)
+}
+.Timer{
     color:white;
     position: absolute;
-    left:40%;
+    left:44%;
 }
 /* test */

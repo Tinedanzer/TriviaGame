@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  
 </head>
 <body>
     <h1>TOTALLY TRIVIAL TRIVIA!!</h1>
 <div class="container">
   <div class="row">
       <div class="col-mid-12">
-        <span id="Timer" class="Aroo">Timer:&nbsp;</span>
+        <span class="Timer" class="Aroo">Timer:&nbsp;<span id="Clock"> </span>
+        </span>
       </div>
   </div><br><br>
 
@@ -30,13 +31,13 @@
     </div>
       </div>
   <div class="row">  
-    <div class="col-mid-12">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<select class="Aroo2" size="4">
-  <option>A: You ask the right guard, would you lie to me?</option>
-  <option>B: You ask the left guard, would your friend lie to me?</option>
-  <option id="Correct1">C: You ask one of them, what would the other guard say is behind the left door?</option>
-  <option>D: You ask one of them, what would the other guard say is behind both doors?</option>
-</select>
+    <div class="col-mid-12">
+<form class="Aroo2">
+  <input type="radio" name=Answers value=A>A: You ask the right guard, would you lie to me?<br>
+  <input type="radio" name=Answers value=B>B: You ask the left guard, would your friend lie to me?<br>
+  <input type="radio" name=Answers value=C id="Correct1">C: You ask to one of them, what would the other guard say is behind the left door?<br>
+  <input type="radio" name=Answers value=D>D: You ask to one of them, what would the other guard say is behind both doors?
+</form>
     </div>
   </div><br>
   <div class="row">
@@ -50,10 +51,11 @@
   </div>
   <div class="row">  
     <div class="col-mid-12">
-<select class="Aroo" size="2">
-  <option>True</option>
-  <option id="Correct2">False</option>
-</select>
+      <!-- needs to be switched and edited (maybe, if above <select> doesnt work-->
+        <form class=Aroo>
+  <input type="radio" name=False value=True>True<br>
+  <input type="radio" name=False value=False id="Correct2">False
+          </form>
     </div>
   </div><br><br><br>
   <div class="row">
@@ -63,5 +65,6 @@
   </div>
   
 </div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
