@@ -18,12 +18,14 @@ function decrement(){
         alert("Time Up!");
         Trivia.wrong++;
         Trivia.wrong++;
+        newpage();
     }
 };
  function stop(){
     clearInterval(intervalId);
 };
 function newpage(){
+    $('body').empty();
     var name2= "<p>TOTALLY TRIVIAL TRIVIA!!</p>";
     var correct2= "<p2 style='display:block'>Correct :<script>$('p2').append(Trivia.correct)</script></p>";
     var wrong2= "<p3 style='display:block'>Wrong :  <script>$('p3').append(Trivia.wrong) </script></p>";
@@ -34,15 +36,8 @@ function newpage(){
 Trivia.timerFunc();
 
 $('#Done').on ('click', function(){
-    $('body').empty();
     newpage();
     stop();
 })
 
-// cleardivonclick="location.href='http://google.com'
-// also, create a new div in html, to append the new elements for the new page
 // $( document ).ready(function(){
-// Trivia.timerFunc();
-// $("#Clock").html(Trivia);
-// })
-// getElementbyId
