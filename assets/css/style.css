@@ -8,8 +8,11 @@ body{
 h1{text-align: center;
     color: blue;
 }
-p{text-align: center;
+p,p2,p3{text-align: center;
     color: rgba(243, 239, 239, 0.267)
+}
+p2,p3{
+    
 }
 .Aroo{
     position:absolute;
