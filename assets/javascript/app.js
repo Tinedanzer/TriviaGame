@@ -1,3 +1,5 @@
+var radio1= document.getElementsByName('Answers');
+var radio2= document.getElementsByName('True');
 Trivia={
     timer: 45,
     correct: 0,
@@ -16,8 +18,7 @@ function decrement(){
     if (Trivia.timer===0){
         stop();
         alert("Time Up!");
-        Trivia.wrong++;
-        Trivia.wrong++;
+        Trivia.wrong=2;
         newpage();
     }
 };
@@ -36,8 +37,24 @@ function newpage(){
 Trivia.timerFunc();
 
 $('#Done').on ('click', function(){
+    counter1();
+    counter2();
     newpage();
     stop();
-})
-
+});
+function counter1(){
+    if (radio1[2].checked){
+     Trivia.correct++
+ }
+    else{
+     Trivia.wrong++;
+ }};
+ function counter2(){
+    if(radio2[1].checked){
+        Trivia.correct++
+    }
+    else{
+        Trivia.wrong++
+    }
+ };
 // $( document ).ready(function(){
