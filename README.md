@@ -1,4 +1,5 @@
 # TriviaGame
+https://tinedanzer.github.io/TriviaGame/
 
 After making this assignment, I realized I should have made the majority of the html within javascript, in order to empty it all and recreate with new questions.
 
