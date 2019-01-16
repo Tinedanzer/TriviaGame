@@ -1,9 +1,9 @@
 // made variables to receive the arrays, in order to access the arrays later
-var radio1= document.getElementsByName('Answers');
-var radio2= document.getElementsByName('True');
+const radio1= document.getElementsByName('Answers');
+const radio2= document.getElementsByName('True');
 // made an object to hold some of the changing data.
 Trivia={
-    timer: 45,
+    timer: 100,
     correct: 0,
     wrong: 0,
     intervalId: 0,
@@ -33,10 +33,10 @@ function decrement(){
 // created and styled a new html page using only javascript.
 function newpage(){
     $('body').empty();
-    var name2= "<p>TOTALLY TRIVIAL TRIVIA!!</p>";
-    var correct2= "<p2 style='display:block'>Correct :<script>$('p2').append(Trivia.correct)</script></p>";
-    var wrong2= "<p3 style='display:block'>Wrong :  <script>$('p3').append(Trivia.wrong) </script></p>";
-    var newbutton= "<button id=newbutton value=button onclick=location.href='https://tinedanzer.github.io/TriviaGame/' style='display: block; margin: 0 auto'>Retake Trivia!</button>";
+    const name2= "<p>TOTALLY TRIVIAL TRIVIA!!</p>";
+    const correct2= "<p2 style='display:block'>Correct :<script>$('p2').append(Trivia.correct)</script></p>";
+    const wrong2= "<p3 style='display:block'>Wrong :  <script>$('p3').append(Trivia.wrong) </script></p>";
+    const newbutton= "<button id=newbutton value=button onclick=location.href='https://tinedanzer.github.io/TriviaGame/' style='display: block; margin: 0 auto'>Retake Trivia!</button>";
     $("body").append(name2, correct2, wrong2, newbutton)
 };
 // starts the clock/game.
@@ -48,7 +48,7 @@ $('#Done').on ('click', function(){
     newpage();
     stop();
 });
-// counter 1 and 2 check the RIGHT answer slots in the arrays, if the right answer was not,
+// counter 1 and 2 check the RIGHT answer slots in the arrays, if the right answer was not
 // checked, then you get a wrong tally.
 function counter1(){
     if (radio1[2].checked){
@@ -65,4 +65,3 @@ function counter1(){
         Trivia.wrong++
     }
  };
-// $( document ).ready(function(){
